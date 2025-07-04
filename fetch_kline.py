@@ -365,3 +365,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+    # 自动运行 select_stock.py
+    import subprocess
+    subprocess.run([sys.executable, "select_stock.py"])
+
