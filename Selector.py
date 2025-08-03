@@ -146,6 +146,7 @@ def _find_peaks(
 # --------------------------- Selector 类 --------------------------- #
 class BBIKDJSelector:
     """
+    少妇战法
     自适应 *BBI(导数)* + *KDJ* 选股器
         • BBI: 允许 bbi_q_threshold 比例的回撤
         • KDJ: J < threshold ；或位于历史 J 的 j_q_threshold 分位及以下
@@ -224,6 +225,7 @@ class BBIKDJSelector:
 
 class PeakKDJSelector:
     """
+    填坑战法
     Peaks + KDJ 选股器    
     """
 
@@ -336,6 +338,7 @@ class PeakKDJSelector:
 
 class BBIShortLongSelector:
     """
+    补票战法
     BBI 上升 + 短/长期 RSV 条件 + DIF > 0 选股器
     """
     def __init__(
@@ -418,6 +421,7 @@ class BBIShortLongSelector:
 
 class BreakoutVolumeKDJSelector:
     """
+    TePu 战法
     放量突破 + KDJ + DIF>0 + 收盘价波动幅度 选股器   
     """
 
